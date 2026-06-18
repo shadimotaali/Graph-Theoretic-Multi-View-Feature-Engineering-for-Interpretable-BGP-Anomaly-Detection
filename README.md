@@ -20,3 +20,53 @@ message-passing graph networks suit dense peering meshes.
 | D3 | RRC05     | AS12880 | Iran TCI              |
 | D4 | RRC05     | AS3352  | Telefónica            |
 | —  | RRC18     | AS766   | RedIRIS (third-AS validation) |
+---
+
+## Installation
+
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+Tested with Python 3.10. GPU (CUDA) is recommended for the GNN experiments but not
+required for the flat classifiers.
+
+---
+
+## Data
+
+Raw BGP data (not redistributed here): MRT RIB/UPDATE dumps are public from RIPE RIS. Auxiliary inputs: CAIDA AS-relationships and PeeringDB. See Scripts/ for the fetch utilities and the exact collectors/date ranges used.
+
+---
+
+## Reproducing the results
+The pipeline runs in phases (see the paper for details):
+
+```bash
+# 1. Feature extraction (graph + statistical views)
+python Scripts/...                # or the bgp_*_features notebooks
+
+# 2. Redundancy reduction & complementarity (114 -> 41 -> 22)
+python Scripts/cca_ajive_analysis.py
+
+# 3. CORAL domain adaptation + diagnostics
+python Scripts/coral_phase2_runner.py
+python Scripts/phase2_diagnostics.py
+
+# 4. Supervised transfer sweep (flat classifiers + fusion)
+python Scripts/phase3_pipeline.py
+
+# 5. GNN experiments (GAT / TopoGPS)
+python Scripts/gnn_classifiers.py --edge astopo_8h_gps ...
+
+# 6. Deployment validation + SHAP
+python Scripts/deploy_historical_inference.py
+python Scripts/shap_explainability.py
+```
+All experiments use fixed seeds; see each script's CLI (--help) for configuration.
+
+
+
+
