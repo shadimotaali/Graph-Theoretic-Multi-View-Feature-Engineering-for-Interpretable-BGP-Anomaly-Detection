@@ -1,0 +1,17 @@
+feature_space,domain,raw_study_rows,uncertain_dropped,study_normal_rows,study_anomaly_rows,historical_anomaly_rows_added,historical_events_added,unified_normal_rows,unified_anomaly_rows,unified_total_rows,anomaly_rate,anomaly_lift_pct,regime_includes_normal,regime_includes_anomaly,regime_augmented_with_historical,output_path
+full_41,rrc04_as12880,8352,1963,5700,689,521,11,5700,1210,6910,0.1751,75.62,True,True,True,dataset/Phase3_unified/full_41/rrc04_as12880.csv
+full_41,rrc04_as3352,8352,713,6982,657,409,9,6982,1066,8048,0.1325,62.25,True,True,True,dataset/Phase3_unified/full_41/rrc04_as3352.csv
+full_41,rrc05_as12880,8352,2654,5094,604,324,9,5094,928,6022,0.1541,53.64,True,True,True,dataset/Phase3_unified/full_41/rrc05_as12880.csv
+full_41,rrc05_as3352,8351,1461,6547,343,275,8,6547,618,7165,0.0863,80.17,True,True,True,dataset/Phase3_unified/full_41/rrc05_as3352.csv
+shared22,rrc04_as12880,8352,1963,5700,689,521,11,5700,1210,6910,0.1751,75.62,True,True,True,dataset/Phase3_unified/shared22/rrc04_as12880.csv
+shared22,rrc04_as3352,8352,713,6982,657,409,9,6982,1066,8048,0.1325,62.25,True,True,True,dataset/Phase3_unified/shared22/rrc04_as3352.csv
+shared22,rrc05_as12880,8352,2654,5094,604,324,9,5094,928,6022,0.1541,53.64,True,True,True,dataset/Phase3_unified/shared22/rrc05_as12880.csv
+shared22,rrc05_as3352,8351,1461,6547,343,275,8,6547,618,7165,0.0863,80.17,True,True,True,dataset/Phase3_unified/shared22/rrc05_as3352.csv
+likely_normal_36,rrc04_as12880,8352,1963,5700,0,0,0,5700,0,5700,0.0,0.0,True,False,False,dataset/Phase3_unified/likely_normal_36/rrc04_as12880.csv
+likely_normal_36,rrc04_as3352,8352,713,6982,0,0,0,6982,0,6982,0.0,0.0,True,False,False,dataset/Phase3_unified/likely_normal_36/rrc04_as3352.csv
+likely_normal_36,rrc05_as12880,8352,2654,5094,0,0,0,5094,0,5094,0.0,0.0,True,False,False,dataset/Phase3_unified/likely_normal_36/rrc05_as12880.csv
+likely_normal_36,rrc05_as3352,8351,1461,6547,0,0,0,6547,0,6547,0.0,0.0,True,False,False,dataset/Phase3_unified/likely_normal_36/rrc05_as3352.csv
+anomalies_30,rrc04_as12880,8352,1963,0,689,521,11,0,1210,1210,1.0,75.62,False,True,True,dataset/Phase3_unified/anomalies_30/rrc04_as12880.csv
+anomalies_30,rrc04_as3352,8352,713,0,657,409,9,0,1066,1066,1.0,62.25,False,True,True,dataset/Phase3_unified/anomalies_30/rrc04_as3352.csv
+anomalies_30,rrc05_as12880,8352,2654,0,604,324,9,0,928,928,1.0,53.64,False,True,True,dataset/Phase3_unified/anomalies_30/rrc05_as12880.csv
+anomalies_30,rrc05_as3352,8351,1461,0,343,275,8,0,618,618,1.0,80.17,False,True,True,dataset/Phase3_unified/anomalies_30/rrc05_as3352.csv

@@ -1,0 +1,136 @@
+{
+  "input_file": "/home/smotaali/First_Full_Paper/dataset/unified_full_rrc05_AS12880_2hop_2025-11-01_2025-11-30_5min.csv",
+  "output_csv": "/home/smotaali/First_Full_Paper/dataset/label_results_HDBSCAN/unified_full_rrc05_AS12880_2hop_2025-11-01_2025-11-30_5min_discovered.csv",
+  "anomaly_rate_mode": "natural",
+  "fixed_contamination_reference": 0.1,
+  "consensus_mode": "weighted",
+  "method_weights": {
+    "Isolation Forest": 0.1938920722432175,
+    "Local Outlier Factor": 0.2207436982380956,
+    "Statistical": 0.1936965727820708,
+    "HDBSCAN": 0.19615438598512952,
+    "Elliptic Envelope": 0.19551327075148642
+  },
+  "consensus_thresholds": {
+    "uncertain": 0.1936965727820708,
+    "likely_anomaly": 0.5831019157767747,
+    "high_confidence_anomaly": 0.7792563017619044,
+    "min_votes_for_likely": 3,
+    "effective_methods": 5
+  },
+  "active_methods": [
+    "Isolation Forest",
+    "Local Outlier Factor",
+    "Statistical",
+    "HDBSCAN",
+    "Elliptic Envelope"
+  ],
+  "inactive_methods": [],
+  "effective_method_count": 5,
+  "lof_n_neighbors": 5,
+  "hdbscan": {
+    "min_cluster_size": 41,
+    "min_samples": 5,
+    "knee_search_fraction": 0.3,
+    "top_gaps_reported": 2,
+    "fallback_threshold": 0.9,
+    "threshold_used": 0.8715676534453021,
+    "threshold_description": "natural largest-gap breakpoint in the top 30% of HDBSCAN scores (gap=0.0006)",
+    "unscored_as_suspicious": true,
+    "unscored_count": 0,
+    "top_gaps": [
+      {
+        "gap_idx": 2448,
+        "gap_size": 0.0006481070399629862,
+        "upper_score": 0.8718917069652836,
+        "lower_score": 0.8712435999253206,
+        "threshold": 0.8715676534453021
+      },
+      {
+        "gap_idx": 2034,
+        "gap_size": 0.0005387901828881603,
+        "upper_score": 0.9005700880815121,
+        "lower_score": 0.9000312978986239,
+        "threshold": 0.900300692990068
+      }
+    ]
+  },
+  "kmeans": {
+    "small_cluster_fraction": 0.05,
+    "upgrade_uncertain": true,
+    "small_clusters": [
+      1
+    ],
+    "upgraded_windows": 0
+  },
+  "bootstrap_stability": {
+    "iterations": 20,
+    "sample_fraction": 0.8,
+    "sampling_strategy": "subsample_without_replacement",
+    "sampling_note": "Subsampling stability test for label robustness, not a classical bootstrap confidence interval.",
+    "mean_stability": 0.9906010536398467,
+    "median_stability": 1.0
+  },
+  "leave_one_method_out": [
+    {
+      "dropped_method": "HDBSCAN",
+      "changed_windows": 1451,
+      "changed_pct": 17.37308429118774,
+      "agreement_pct": 82.62691570881226
+    },
+    {
+      "dropped_method": "Elliptic Envelope",
+      "changed_windows": 1070,
+      "changed_pct": 12.811302681992338,
+      "agreement_pct": 87.18869731800766
+    },
+    {
+      "dropped_method": "Statistical",
+      "changed_windows": 1070,
+      "changed_pct": 12.811302681992338,
+      "agreement_pct": 87.18869731800766
+    },
+    {
+      "dropped_method": "Local Outlier Factor",
+      "changed_windows": 428,
+      "changed_pct": 5.124521072796935,
+      "agreement_pct": 94.87547892720306
+    },
+    {
+      "dropped_method": "Isolation Forest",
+      "changed_windows": 295,
+      "changed_pct": 3.532088122605364,
+      "agreement_pct": 96.46791187739464
+    }
+  ],
+  "leave_one_method_out_by_method": {
+    "HDBSCAN": {
+      "changed_windows": 1451,
+      "changed_pct": 17.37308429118774,
+      "agreement_pct": 82.62691570881226
+    },
+    "Elliptic Envelope": {
+      "changed_windows": 1070,
+      "changed_pct": 12.811302681992338,
+      "agreement_pct": 87.18869731800766
+    },
+    "Statistical": {
+      "changed_windows": 1070,
+      "changed_pct": 12.811302681992338,
+      "agreement_pct": 87.18869731800766
+    },
+    "Local Outlier Factor": {
+      "changed_windows": 428,
+      "changed_pct": 5.124521072796935,
+      "agreement_pct": 94.87547892720306
+    },
+    "Isolation Forest": {
+      "changed_windows": 295,
+      "changed_pct": 3.532088122605364,
+      "agreement_pct": 96.46791187739464
+    }
+  },
+  "fourier": {
+    "baseline_source": "likely_normal"
+  }
+}

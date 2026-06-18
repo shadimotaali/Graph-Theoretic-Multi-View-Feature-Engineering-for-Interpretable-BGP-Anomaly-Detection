@@ -1,0 +1,136 @@
+{
+  "input_file": "/home/smotaali/First_Full_Paper/dataset/unified_full_rrc04_AS3352_2hop_2025-11-01_2025-11-30_5min.csv",
+  "output_csv": "/home/smotaali/First_Full_Paper/dataset/label_results_HDBSCAN/unified_full_rrc04_AS3352_2hop_2025-11-01_2025-11-30_5min_discovered.csv",
+  "anomaly_rate_mode": "natural",
+  "fixed_contamination_reference": 0.1,
+  "consensus_mode": "weighted",
+  "method_weights": {
+    "Isolation Forest": 0.1875992347659946,
+    "Local Outlier Factor": 0.21983729721641213,
+    "Statistical": 0.18990708687762398,
+    "HDBSCAN": 0.21094376630373024,
+    "Elliptic Envelope": 0.19171261483623908
+  },
+  "consensus_thresholds": {
+    "uncertain": 0.1875992347659946,
+    "likely_anomaly": 0.5692189364798577,
+    "high_confidence_anomaly": 0.7801627027835879,
+    "min_votes_for_likely": 3,
+    "effective_methods": 5
+  },
+  "active_methods": [
+    "Isolation Forest",
+    "Local Outlier Factor",
+    "Statistical",
+    "HDBSCAN",
+    "Elliptic Envelope"
+  ],
+  "inactive_methods": [],
+  "effective_method_count": 5,
+  "lof_n_neighbors": 15,
+  "hdbscan": {
+    "min_cluster_size": 41,
+    "min_samples": 5,
+    "knee_search_fraction": 0.3,
+    "top_gaps_reported": 2,
+    "fallback_threshold": 0.9,
+    "threshold_used": 0.9685365891394893,
+    "threshold_description": "natural largest-gap breakpoint in the top 30% of HDBSCAN scores (gap=0.0016)",
+    "unscored_as_suspicious": true,
+    "unscored_count": 0,
+    "top_gaps": [
+      {
+        "gap_idx": 130,
+        "gap_size": 0.0016007128812676186,
+        "upper_score": 0.9693369455801231,
+        "lower_score": 0.9677362326988554,
+        "threshold": 0.9685365891394893
+      },
+      {
+        "gap_idx": 107,
+        "gap_size": 0.0014847852803465678,
+        "upper_score": 0.977945275909125,
+        "lower_score": 0.9764604906287784,
+        "threshold": 0.9772028832689517
+      }
+    ]
+  },
+  "kmeans": {
+    "small_cluster_fraction": 0.05,
+    "upgrade_uncertain": true,
+    "small_clusters": [
+      1
+    ],
+    "upgraded_windows": 0
+  },
+  "bootstrap_stability": {
+    "iterations": 20,
+    "sample_fraction": 0.8,
+    "sampling_strategy": "subsample_without_replacement",
+    "sampling_note": "Subsampling stability test for label robustness, not a classical bootstrap confidence interval.",
+    "mean_stability": 0.9960727969348657,
+    "median_stability": 1.0
+  },
+  "leave_one_method_out": [
+    {
+      "dropped_method": "Statistical",
+      "changed_windows": 774,
+      "changed_pct": 9.267241379310345,
+      "agreement_pct": 90.73275862068965
+    },
+    {
+      "dropped_method": "Elliptic Envelope",
+      "changed_windows": 597,
+      "changed_pct": 7.1479885057471275,
+      "agreement_pct": 92.85201149425288
+    },
+    {
+      "dropped_method": "Local Outlier Factor",
+      "changed_windows": 590,
+      "changed_pct": 7.064176245210728,
+      "agreement_pct": 92.93582375478927
+    },
+    {
+      "dropped_method": "Isolation Forest",
+      "changed_windows": 554,
+      "changed_pct": 6.633141762452108,
+      "agreement_pct": 93.36685823754789
+    },
+    {
+      "dropped_method": "HDBSCAN",
+      "changed_windows": 510,
+      "changed_pct": 6.10632183908046,
+      "agreement_pct": 93.89367816091954
+    }
+  ],
+  "leave_one_method_out_by_method": {
+    "Statistical": {
+      "changed_windows": 774,
+      "changed_pct": 9.267241379310345,
+      "agreement_pct": 90.73275862068965
+    },
+    "Elliptic Envelope": {
+      "changed_windows": 597,
+      "changed_pct": 7.1479885057471275,
+      "agreement_pct": 92.85201149425288
+    },
+    "Local Outlier Factor": {
+      "changed_windows": 590,
+      "changed_pct": 7.064176245210728,
+      "agreement_pct": 92.93582375478927
+    },
+    "Isolation Forest": {
+      "changed_windows": 554,
+      "changed_pct": 6.633141762452108,
+      "agreement_pct": 93.36685823754789
+    },
+    "HDBSCAN": {
+      "changed_windows": 510,
+      "changed_pct": 6.10632183908046,
+      "agreement_pct": 93.89367816091954
+    }
+  },
+  "fourier": {
+    "baseline_source": "robust_all"
+  }
+}

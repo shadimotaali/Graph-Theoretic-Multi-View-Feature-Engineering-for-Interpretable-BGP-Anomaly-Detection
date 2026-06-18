@@ -1,0 +1,70 @@
+{
+  "labelling_rule": {
+    "normal_labels": [
+      "likely_normal"
+    ],
+    "anomaly_labels": [
+      "high_confidence_anomaly",
+      "likely_anomaly"
+    ],
+    "dropped_labels": [
+      "uncertain"
+    ]
+  },
+  "feature_space_composition": {
+    "full_41": {
+      "includes_normal": true,
+      "includes_anomaly": true,
+      "augmented_with_historical": true
+    },
+    "shared22": {
+      "includes_normal": true,
+      "includes_anomaly": true,
+      "augmented_with_historical": true
+    },
+    "likely_normal_36": {
+      "includes_normal": true,
+      "includes_anomaly": false,
+      "augmented_with_historical": false
+    },
+    "anomalies_30": {
+      "includes_normal": false,
+      "includes_anomaly": true,
+      "augmented_with_historical": true
+    }
+  },
+  "totals": {
+    "full_41": {
+      "study_normal_total": 24323,
+      "study_anomaly_total": 2293,
+      "historical_anomaly_added_total": 1529,
+      "unified_normal_total": 24323,
+      "unified_anomaly_total": 3822,
+      "historical_events_added_total": 37
+    },
+    "shared22": {
+      "study_normal_total": 24323,
+      "study_anomaly_total": 2293,
+      "historical_anomaly_added_total": 1529,
+      "unified_normal_total": 24323,
+      "unified_anomaly_total": 3822,
+      "historical_events_added_total": 37
+    },
+    "likely_normal_36": {
+      "study_normal_total": 24323,
+      "study_anomaly_total": 0,
+      "historical_anomaly_added_total": 0,
+      "unified_normal_total": 24323,
+      "unified_anomaly_total": 0,
+      "historical_events_added_total": 0
+    },
+    "anomalies_30": {
+      "study_normal_total": 0,
+      "study_anomaly_total": 2293,
+      "historical_anomaly_added_total": 1529,
+      "unified_normal_total": 0,
+      "unified_anomaly_total": 3822,
+      "historical_events_added_total": 37
+    }
+  }
+}
