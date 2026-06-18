@@ -1,0 +1,7 @@
+pair,bucket,knn_before_coral_f1_mean,knn_before_coral_f1_std,knn_before_coral_prauc_mean,knn_before_coral_rec_mean,knn_after_coral_f1_mean,knn_after_coral_f1_std,knn_after_coral_prauc_mean,knn_after_coral_rec_mean,temporal_before_coral_f1_mean,temporal_before_coral_f1_std,temporal_before_coral_prauc_mean,temporal_before_coral_rec_mean,temporal_after_coral_f1_mean,temporal_after_coral_f1_std,temporal_after_coral_prauc_mean,temporal_after_coral_rec_mean
+D1->D3,same-AS,0.616,0.072,0.489,0.532,0.774,0.102,0.889,0.883,0.635,0.026,0.354,0.384,0.682,0.069,0.601,0.852
+D2->D4,same-AS,0.237,0.263,0.079,0.718,0.509,0.092,0.561,0.84,0.217,0.287,0.077,0.699,0.462,0.073,0.258,0.684
+D2->D3,cross-AS,0.099,0.005,0.107,0.988,0.568,0.051,0.527,0.746,0.194,0.17,0.113,0.911,0.515,0.013,0.382,0.663
+D3->D4,cross-AS,0.556,0.0,0.133,0.073,0.53,0.01,0.526,0.645,0.551,0.007,0.119,0.068,0.453,0.032,0.202,0.603
+D1->D4,cross-AS,0.473,0.366,0.48,0.631,0.567,0.009,0.486,0.899,0.43,0.188,0.246,0.724,0.519,0.003,0.268,0.678
+D1->D2,cross-AS,0.376,0.272,0.204,0.503,0.518,0.002,0.223,0.35,0.207,0.103,0.174,0.614,0.462,0.005,0.135,0.334

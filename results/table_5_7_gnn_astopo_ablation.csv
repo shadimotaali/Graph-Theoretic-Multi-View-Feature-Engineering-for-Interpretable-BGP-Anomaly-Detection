@@ -1,0 +1,6 @@
+edge,n_pairs,macro_f1_mean,macro_f1_std,pr_auc_mean,recall_anom_mean,f1_anom_mean
+astopo_8h,12,0.704,0.13,0.557,0.601,0.48
+astopo_8h_weighted,12,0.703,0.132,0.554,0.587,0.48
+astopo_8h_gps,12,0.684,0.144,0.552,0.616,0.463
+astopo_8h_gps_pe,12,0.669,0.16,0.545,0.626,0.455
+astopo_8h_hgt,12,0.697,0.139,0.555,0.603,0.474

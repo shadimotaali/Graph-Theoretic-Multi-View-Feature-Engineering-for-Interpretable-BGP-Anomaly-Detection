@@ -1,0 +1,11 @@
+source_domain,target_domain,bucket,edge,view,seed,coral_kind,balance_fit,alignment
+rrc04_as12880,rrc05_as12880,same_as,knn,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc04_as3352,cross_as,knn,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc05_as12880,same_as,temporal,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc04_as3352,cross_as,temporal,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc05_as12880,same_as,astopo_8h,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc04_as3352,cross_as,astopo_8h,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc05_as12880,same_as,astopo_8h_weighted,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc04_as3352,cross_as,astopo_8h_weighted,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc05_as12880,same_as,astopo_5m,fusion_early,0,study_only,none,after_coral
+rrc04_as12880,rrc04_as3352,cross_as,astopo_5m,fusion_early,0,study_only,none,after_coral

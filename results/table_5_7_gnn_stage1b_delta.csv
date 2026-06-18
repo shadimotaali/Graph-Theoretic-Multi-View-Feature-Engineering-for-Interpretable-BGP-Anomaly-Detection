@@ -1,0 +1,13 @@
+pair,bucket,knn_study_f1,knn_hist_f1,knn_delta,knn_scope,temporal_study_f1,temporal_hist_f1,temporal_delta,temporal_scope
+D1->D3,same-AS,0.774,0.769,-0.005,in-scope,0.682,0.629,-0.053,in-scope
+D2->D4,same-AS,0.509,0.524,0.016,in-scope,0.462,0.405,-0.057,in-scope
+D2->D3,cross-AS,0.568,0.567,-0.001,in-scope,0.515,0.535,0.02,in-scope
+D3->D4,cross-AS,0.53,0.482,-0.048,in-scope,0.453,0.467,0.014,in-scope
+D1->D4,cross-AS,0.567,0.56,-0.007,in-scope,0.519,0.498,-0.021,in-scope
+D1->D2,cross-AS,0.518,0.455,-0.063,in-scope,0.462,0.409,-0.053,in-scope
+D2->D1,cross-AS,0.661,,,out-of-scope,0.582,,,out-of-scope
+D3->D1,same-AS,0.743,,,out-of-scope,0.652,,,out-of-scope
+D3->D2,cross-AS,0.453,,,out-of-scope,0.421,,,out-of-scope
+D4->D1,cross-AS,0.83,,,out-of-scope,0.728,,,out-of-scope
+D4->D2,same-AS,0.53,,,out-of-scope,0.531,,,out-of-scope
+D4->D3,cross-AS,0.685,,,out-of-scope,0.715,,,out-of-scope

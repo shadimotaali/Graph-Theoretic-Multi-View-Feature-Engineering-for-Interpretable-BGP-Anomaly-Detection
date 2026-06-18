@@ -1,0 +1,7 @@
+pair,bucket,astopo_8h_before_coral_f1_mean,astopo_8h_before_coral_f1_std,astopo_8h_before_coral_prauc_mean,astopo_8h_before_coral_rec_mean,astopo_8h_after_coral_f1_mean,astopo_8h_after_coral_f1_std,astopo_8h_after_coral_prauc_mean,astopo_8h_after_coral_rec_mean
+D1->D3,same-AS,0.566,0.093,0.237,0.626,0.79,0.009,0.799,0.797
+D2->D4,same-AS,0.087,0.025,0.051,0.979,0.838,0.018,0.811,0.773
+D2->D3,cross-AS,0.168,0.085,0.103,0.865,0.714,0.044,0.567,0.541
+D3->D4,cross-AS,0.168,0.153,0.055,0.844,0.604,0.048,0.397,0.571
+D1->D4,cross-AS,0.624,0.156,0.331,0.662,0.602,0.008,0.508,0.921
+D1->D2,cross-AS,0.436,0.217,0.118,0.362,0.514,0.012,0.161,0.329

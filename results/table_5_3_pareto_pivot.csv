@@ -1,0 +1,13 @@
+pair,core10,shared22,delta_core10_minus_shared22,core10_wins,within_001
+rrc04_as12880__to__rrc04_as3352,0.177886,0.489889,-0.312003,False,False
+rrc04_as12880__to__rrc05_as12880,0.510735,0.876545,-0.365810,False,False
+rrc04_as12880__to__rrc05_as3352,0.371712,0.648062,-0.276350,False,False
+rrc04_as3352__to__rrc04_as12880,0.255880,0.909567,-0.653687,False,False
+rrc04_as3352__to__rrc05_as12880,0.322044,0.704312,-0.382268,False,False
+rrc04_as3352__to__rrc05_as3352,0.049166,0.791978,-0.742812,False,False
+rrc05_as12880__to__rrc04_as12880,0.440054,0.917779,-0.477725,False,False
+rrc05_as12880__to__rrc04_as3352,0.234863,0.489315,-0.254452,False,False
+rrc05_as12880__to__rrc05_as3352,0.125231,0.556080,-0.430849,False,False
+rrc05_as3352__to__rrc04_as12880,0.828569,0.879031,-0.050462,False,False
+rrc05_as3352__to__rrc04_as3352,0.532368,0.619908,-0.087540,False,False
+rrc05_as3352__to__rrc05_as12880,0.795842,0.837368,-0.041526,False,False

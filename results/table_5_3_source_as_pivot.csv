@@ -1,0 +1,9 @@
+feature_set,balance_fit,alignment,AS12880,AS3352,delta_AS3352_minus_AS12880
+core10,equal,after_coral,0.544675,0.581266,0.036591
+core10,equal,before_coral,0.296506,0.532539,0.236032
+core10,none,after_coral,0.539720,0.629459,0.089739
+core10,none,before_coral,0.310080,0.463978,0.153898
+shared22,equal,after_coral,0.592101,0.696066,0.103966
+shared22,equal,before_coral,0.639642,0.759526,0.119884
+shared22,none,after_coral,0.675007,0.787568,0.112561
+shared22,none,before_coral,0.662945,0.790361,0.127416
