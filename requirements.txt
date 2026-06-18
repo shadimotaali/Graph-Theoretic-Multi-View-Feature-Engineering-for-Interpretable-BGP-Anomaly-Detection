@@ -1,0 +1,35 @@
+# Core scientific stack
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+
+# Graph construction & topology features
+networkx==3.4.2
+networkit==11.2.1
+
+# BGP MRT parsing (imported as `bgpkit`)
+pybgpkit==0.6.2
+
+# Deep learning & GNNs
+# NOTE: this pins the CPU/default build. For GPU, install the CUDA build first:
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0
+torch-geometric==2.7.0
+xgboost==3.2.0
+
+# Labelling, feature selection & explainability
+hdbscan==0.8.42
+statsmodels==0.14.6
+shap==0.49.1
+
+# Plotting
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# Utilities
+tqdm==4.67.3
+
+# Notebook support (for the bgp_*_features and labelling notebooks)
+jupyter
+ipykernel==7.2.0
